@@ -19,4 +19,7 @@ public interface APIs {
     @GET("GetOrderLines.php?")
     Call<ResponseBody> getItemList(@Query("orderline") String orderId);
 
+    @GET("GetSalesvstargets.php?")
+    Call<ResponseBody> getSales(@Query("RepCode") String code);
+
 }

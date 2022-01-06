@@ -12,7 +12,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            >
 
             <TextView
                 android:id="@+id/titleText"
@@ -43,7 +45,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/ordersLoadedDeals"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
@@ -58,13 +60,22 @@
                             android:background="@drawable/clicked_view"
                             >
 
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/orders"
+                                />
+
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/amaranth_bold"
                                 android:gravity="center"
-                                android:padding="25dp"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
                                 android:text="Orders &amp; Loaded Deals"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -78,7 +89,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/salesTargets"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
@@ -93,13 +104,22 @@
                             android:background="@drawable/clicked_view"
                             >
 
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/sales"
+                                />
+
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/amaranth_bold"
                                 android:gravity="center"
-                                android:padding="25dp"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
                                 android:text="Sales Targets"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -120,44 +140,86 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/stockSheet"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
                         app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/amaranth_bold"
                             android:gravity="center"
-                            android:padding="25dp"
-                            android:text="Stock Sheet"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:background="@drawable/clicked_view"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/stock_sheet"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amaranth_bold"
+                                android:gravity="center"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
+                                android:text="Stock Sheet"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/visitMemos"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
                         app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/amaranth_bold"
                             android:gravity="center"
-                            android:padding="25dp"
-                            android:text="Visits &amp; Memos"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:background="@drawable/clicked_view"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/memos"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amaranth_bold"
+                                android:gravity="center"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
+                                android:text="Visits &amp; Memos"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
 
                     </androidx.cardview.widget.CardView>
 
@@ -171,44 +233,85 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/collaborating"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
                         app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/amaranth_bold"
                             android:gravity="center"
-                            android:padding="25dp"
-                            android:text="Collaborating"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:background="@drawable/clicked_view"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/collaborating"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amaranth_bold"
+                                android:gravity="center"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
+                                android:text="Collaborating"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cPanel"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
                         app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/amaranth_bold"
                             android:gravity="center"
-                            android:padding="25dp"
-                            android:text="C-Panel"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:background="@drawable/clicked_view"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/c_panel"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amaranth_bold"
+                                android:gravity="center"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
+                                android:text="C-Panel"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
 
                     </androidx.cardview.widget.CardView>
 
@@ -222,22 +325,43 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/createCustomers"
                         android:layout_width="0dp"
-                        android:layout_height="125dp"
+                        android:layout_height="165dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="7dp"
                         app:cardElevation="7dp"
                         app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/amaranth_bold"
                             android:gravity="center"
-                            android:padding="25dp"
-                            android:text="Create Customers"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:background="@drawable/clicked_view"
+                            >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/create_customer"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amaranth_bold"
+                                android:gravity="center"
+                                android:paddingStart="25dp"
+                                android:paddingEnd="25dp"
+                                android:paddingTop="10dp"
+                                android:text="Create Customers"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
 
                     </androidx.cardview.widget.CardView>
 

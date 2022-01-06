@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.aariyan.briefcase.Activity.CustomerNameActivity;
+import com.aariyan.briefcase.Activity.StockSheetActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 public class LandingActivity extends AppCompatActivity {
@@ -122,6 +124,22 @@ public class LandingActivity extends AppCompatActivity {
                 intent.putExtra("name", customerName.getText().toString());
                 intent.putExtra("code", customerCode.getText().toString());
                 startActivity(intent);
+            }
+        });
+
+        stockSheet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandingActivity.this, StockSheetActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+
+        visitMemos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandingActivity.this, CustomerNameActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }

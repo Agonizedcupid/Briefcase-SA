@@ -40,7 +40,7 @@ public class StockSheetActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        loadWebView("https://www.google.com/");
+        loadWebView("http://102.37.0.48/memos/GetStockSheet.php");
     }
 
     private void loadWebView(String urlLink) {

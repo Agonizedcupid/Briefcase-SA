@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.aariyan.briefcase.Activity.CollaborationActivity;
 import com.aariyan.briefcase.Activity.CustomerNameActivity;
 import com.aariyan.briefcase.Activity.StockSheetActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -139,6 +140,14 @@ public class LandingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LandingActivity.this, CustomerNameActivity.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+
+        collaborating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LandingActivity.this, CollaborationActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.CustomerNameActivity">
+    tools:context=".Activity.MessageActivity">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarLayout"
@@ -28,49 +29,22 @@
                 />
 
             <TextView
+                android:id="@+id/toolbarText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Customer Name"
+                android:text="Department Name"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_below="@id/appbarLayout"
-        >
-
-        <EditText
-            android:id="@+id/searchHere"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/edit_text_background"
-            android:layout_margin="15dp"
-            android:hint="Search here.."
-            android:paddingStart="15dp"
-            android:textColorHint="@color/darkerColor"
-            android:textColor="@android:color/black"
-            />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/customerRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/single_customer_name"
-            />
-
-    </LinearLayout>
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/progressbar"
+        tools:listitem="@layout/single_message_list"
         />
 
 </RelativeLayout>

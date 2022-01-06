@@ -17,4 +17,18 @@ public class ApiClient {
         }
         return retrofit;
     }
+
+    private static Retrofit retrofit2 = null;
+
+    private static String BASE_URL2="http://102.37.0.48/memos/";       // SERVER
+
+    public static Retrofit getClient2() {
+        if (retrofit2 == null) {
+            retrofit2 = new Retrofit.Builder()
+                    .baseUrl(BASE_URL2)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return retrofit2;
+    }
 }

@@ -13,13 +13,7 @@
         android:theme="@style/Theme.Briefcase"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Sales"
-            android:exported="false" />
-        <activity
-            android:name=".OrderActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".LandingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +21,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Sales"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

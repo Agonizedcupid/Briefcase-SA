@@ -110,7 +110,7 @@
                 android:hint="Notes...."
                 android:padding="10dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/purple_700"
+                android:textColorHint="@color/darkerColor"
                 android:textSize="16sp" />
 
             <TextView
@@ -146,9 +146,176 @@
                 android:hint="Type in some notes for you to catch up next time"
                 android:padding="10dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/purple_700"
+                android:textColorHint="@color/darkerColor"
                 android:textSize="16sp" />
 
+
+            <!--Surveys Part-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/firstQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is the customer happy with our delivery?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/firstOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/secondOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/secondQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is the customer happy with our delivery?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/thirdOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/fourthOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/thirdQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is the customer happy with our delivery?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/fifthOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/sixthOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Some special comment from the customer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/specialComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="start"
+                    android:hint="Write something!"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkerColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/saveLogVisitBtn"

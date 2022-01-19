@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 public interface APIs {
 
     @GET("GetOrders.php?")
-    Call<ResponseBody> getOrderList(@Query("customercode") String customerCode,@Query("dateFrom") String dateFrom, @Query("dateTo") String dateTo);
+    Call<ResponseBody> getOrderList(@Query("customercode") String customerCode, @Query("dateFrom") String dateFrom, @Query("dateTo") String dateTo);
 
 
     @GET("GetOrderLines.php?")
@@ -44,7 +44,11 @@ public interface APIs {
     @POST("Logvisit")
     Call<String> submitLogVisit(@Field("CustomerCode") String customerCode, @Field("notes") String notes,
                                 @Field("catchupnotes") String catchUpNotes, @Field("nextvisit") String nextVisitDate,
-                                @Field("userid") int userId, @Field("Lat") double latitude, @Field("Lon") double longitude
+                                @Field("userid") int userId, @Field("Lat") double latitude, @Field("Lon") double longitude,
+                                @Field("answeroneid") String answeroneid, @Field("answeronetext") String answeronetext,
+                                @Field("answertwoid") String answertwoid, @Field("answertwotext") String answertwotext,
+                                @Field("answerthreeid") String answerthreeid, @Field("answerthreetext") String answerthreetext,
+                                @Field("customersatisfactoyanswer") String customersatisfactoyanswer
     );
 
     @FormUrlEncoded
@@ -59,5 +63,8 @@ public interface APIs {
 
     @GET("GetReminderswebview.php?")
     Call<ResponseBody> getMemo(@Query("from") String startDate, @Query("to") String endDate);
+
+    @GET("GetSurvey.php?LocationId=1")
+    Call<ResponseBody> surveyQuestion();
 
 }
